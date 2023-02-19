@@ -1,0 +1,22 @@
+name: ParkourRace
+version: '${project.version}'
+main: com.github.gavvydizzle.parkourrace.ParkourRace
+api-version: 1.19
+depend: [ ServerUtils ]
+authors: [ GavvyDizzle ]
+description: Parkour plugin for Lafayette Hackathon 2023
+commands:
+  parkour:
+    aliases: pk
+    description: ParkourRace player commands
+    permission: "parkourrace.player"
+    permission-message: Insufficient permission
+  course:
+    description: ParkourRace course modification commands
+    permission: "parkourrace.course"
+    permission-message: Insufficient permission
+  parkouradmin:
+    aliases: pkadmin
+    description: ParkourRace admin commands
+    permission: "parkourrace.admin"
+    permission-message: Insufficient permission
